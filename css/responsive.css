@@ -1,0 +1,168 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  body.dark {
+    --black-1: whitesmoke;
+    --black-2: whitesmoke;
+    --black-3: whitesmoke;
+    --black-4: whitesmoke;
+    --black-5: whitesmoke;
+    --black-6: whitesmoke;
+    --black-7: whitesmoke;
+    --black-8: whitesmoke;
+    --black-9: whitesmoke;
+    --t-black-1: whitesmoke;
+    --t-green: #2ecc40;
+    --t-silver: hsla(0, 0%, 65%, 1);
+    --t-white: hsla(40, 12%, 5%, 1);
+  }
+  aside.sidebar {
+    width: 30%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: left;
+  }
+  .menu_btn {
+    display: block;
+  }
+  .logo {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sidebar.open {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .section {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .r-logo {
+    top: 5%;
+    left: -70%;
+    padding: 0 2%;
+  }
+  .menu_btn {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .menu_btn:hover i {
+    transform: rotate(360deg);
+  }
+  .menu_btn i {
+    background-color: var(--t-green);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--t-white);
+    font-size: 3rem;
+  }
+  .home .home-container .box .image img {
+    margin-top: 2rem;
+  }
+  .popup_portfolio {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  aside.sidebar {
+    width: 40%;
+  }
+  .home .home-container .box .image {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  .home .home-container .box .image img {
+    width: 40rem;
+    margin-top: 13rem;
+    animation: up 3s ease-in-out infinite alternate;
+  }
+  .popup_portfolio {
+    left: 0;
+  }
+  .popup_container .box {
+    flex: 1 1 30rem;
+  }
+  .popup_container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contact_contacts .contact_icon {
+    flex: 1 1 15rem;
+  }
+}
+
+@media (max-width: 560px) {
+  aside.sidebar {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  section {
+    padding: 10rem 3%;
+    padding-top: 2rem;
+  }
+  section.home {
+    padding-top: 0;
+  }
+  aside.sidebar {
+    width: 70%;
+  }
+  .popup_container {
+    width: 80%;
+  }
+  .r-logo {
+    top: 5%;
+    left: -70;
+    padding: 0 2%;
+  }
+  .contact_contacts .contact_icon {
+    flex: 1 1 15rem;
+  }
+  .contact_form form .name_sub {
+    gap: 1rem 1rem;
+  }
+  .name_sub .subject,
+  .name_sub .name {
+    flex: 1 1 20rem;
+  }
+  .home .home-container .box .image img {
+    width: 40rem;
+    margin-top: 9rem;
+  }
+  .portfolio_container .portfolio_card img {
+    width: 100%;
+    height: 25rem;
+  }
+  .popup_portfolio {
+    top: 7%;
+  }
+}
