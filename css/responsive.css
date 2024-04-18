@@ -18,11 +18,13 @@
     --t-white: hsla(40, 12%, 5%, 1);
   }
   aside.sidebar {
+    height: 100vh;
     width: 30%;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 10;
+    height: 100vh;
     opacity: 0;
     transform: scale(0);
     transform-origin: left;
@@ -86,6 +88,7 @@
 
 @media (max-width: 768px) {
   aside.sidebar {
+    height: 100vh;
     width: 40%;
   }
   .home .home-container .box .image {
@@ -118,6 +121,7 @@
 
 @media (max-width: 560px) {
   aside.sidebar {
+    height: 100vh;
     width: 50%;
   }
 }
@@ -134,6 +138,7 @@
     padding-top: 0;
   }
   aside.sidebar {
+    height: 100vh;
     width: 70%;
   }
   .popup_container {
