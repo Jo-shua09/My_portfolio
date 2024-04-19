@@ -134,26 +134,49 @@
             <h1>send me an email</h1>
             <p>i respond within 24 hours</p>
 
-            <form action="">
+            <form action="https://formspree.io/f/mvoedkek" method="post">
               <div class="name_sub">
                 <div class="name">
                   <label for="name">name</label>
-                  <input type="text" placeholder="fullname" />
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="fullname"
+                    required
+                  />
                 </div>
                 <div class="subject">
                   <label for="email">email</label>
-                  <input type="email" placeholder="email address" />
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="email address"
+                    required
+                  />
                 </div>
               </div>
 
-              <label for="subject">subject</label>
-              <input type="text" placeholder="message subject" />
+              <div class="sub">
+                <label for="subject">subject</label>
+                <input
+                  name="subject"
+                  type="text"
+                  placeholder="message subject"
+                  required
+                />
+              </div>
 
               <label for="nessage">message</label>
-              <textarea name="text" placeholder="your message"></textarea>
+              <textarea
+                name="message"
+                placeholder="your message"
+                required
+              ></textarea>
 
               <div class="btn form_btn">
-                <a href=""> <i class="fa fa-paper-plane"></i> send message </a>
+                <i class="fa fa-paper-plane"></i>
+                <input type="submit" value="send message" />
+                <!-- <a href=""> <i class="fa fa-paper-plane"></i> send message </a> -->
               </div>
             </form>
           </div>

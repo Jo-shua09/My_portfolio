@@ -1055,7 +1055,8 @@ label {
   font-family: var(--font_family-2);
 }
 .contact_form form textarea,
-.contact_form form input {
+.contact_form form .sub input,
+.contact_form form .name_sub input {
   margin-top: 0.5rem;
   width: 100%;
   color: var(--t-white);
@@ -1078,9 +1079,31 @@ label {
   height: 30rem;
   padding: 1rem;
 }
+.form_btn input {
+  /* text-align: left; */
+  background-color: transparent;
+  color: var(--t-white);
+}
 .form_btn {
-  text-align: left;
-  margin-top: 3rem;
+  border-bottom: 0.2rem solid var(--green);
+  border-top: 0.2rem solid var(--green);
+  padding: 2rem 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--t-white);
+  font-size: var(--fontSize-2);
+  text-transform: capitalize;
+  font-weight: var(--weight-bold);
+  width: fit-content;
+  border-radius: 1rem;
+  letter-spacing: var(--letterSpacing-1);
+  text-shadow: var(--shadow-3);
+}
+.form_btn {
+  margin-right: 1rem;
+}
+.form_btn:hover {
+  background-color: var(--green);
 }
 /* CONTACT SECTION ENDS */
 
