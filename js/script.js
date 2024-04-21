@@ -225,3 +225,23 @@ navLinks.forEach((link) => {
 //   const target = element.getAttribute("href").split("#")[1];
 //   document.querySelector("#", target).classList.add("active");
 // }
+
+// let submitBtn = document.querySelector(".submit");
+// let Name = document.myForm.name;
+// let Enail = document.myForm.email;
+// let Subject = document.myForm.subject;
+// let Message = document.myForm.message;
+// let Form = document.querySelector("#myform");
+// let Form = document.myForm;
+// submitBtn.onclick = function () {
+//   if (Name != "" && Email != "" && Subject != "" && Message != "") {
+//     Form.reset();
+//   }
+// };
+
+// Form.addEventListener("submit", function () {
+//   Form.preventDefault();
+//   setInterval(() => {
+//     Form.reset();
+//   }, 3000);
+// });

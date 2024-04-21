@@ -597,9 +597,6 @@ section {
   width: 100%;
   height: 100%;
 }
-.itm {
-  /* margin-bottom: 2.5rem; */
-}
 .about .exp-container .box .items::after {
   position: absolute;
   content: "";
