@@ -146,7 +146,7 @@ window.addEventListener("load", () => {
 
 // ============= AUTO TYPING SETTINGS ===============
 var typed = new Typed(".typing", {
-  strings: ["Web Designer", "Web Developer", "UI/UX designer", "Gamer"],
+  strings: ["Web Designer", "Frontend Developer", "UI/UX designer", "Gamer"],
   typeSpeed: 100,
   BackSpeed: 60,
   loop: true,
