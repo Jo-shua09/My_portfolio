@@ -102,8 +102,7 @@ function portfolioItemDetails(portfolioItem) {
   popupSub.innerHTML = portfolioItem.querySelector(".project_name").innerHTML;
 
   // Update the content
-  popupContent.innerHTML =
-    portfolioItem.querySelector(".project_details").innerHTML;
+  popupContent.innerHTML = portfolioItem.querySelector(".project_details").innerHTML;
 }
 // document.addEventListener("click", (e) => {
 //   if (e.target.classList.contains("view_popup")) {
@@ -146,7 +145,7 @@ window.addEventListener("load", () => {
 
 // ============= AUTO TYPING SETTINGS ===============
 var typed = new Typed(".typing", {
-  strings: ["Web Designer", "Frontend Developer", "UI/UX designer", "Gamer"],
+  strings: ["Web Designer", "Frontend Developer", "Gamer"],
   typeSpeed: 100,
   BackSpeed: 60,
   loop: true,
