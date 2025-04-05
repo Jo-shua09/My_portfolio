@@ -62,8 +62,18 @@ body.dark {
   --font_family-3: "Clicker Script", cursive;
 
   /* GRADIENTS */
-  --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--black-3) 33.33% 50%, transparent 66.66% 75%);
-  --gradient-1: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.7), transparent);
+  --loading-text-gradient: linear-gradient(
+    90deg,
+    transparent 0% 16.66%,
+    var(--black-3) 33.33% 50%,
+    transparent 66.66% 75%
+  );
+  --gradient-1: linear-gradient(
+    to top,
+    hsla(0, 0%, 0%, 0.9),
+    hsla(0, 0%, 0%, 0.7),
+    transparent
+  );
 
   /* FONT SIZES */
   --fontSize-13: calc(1.3rem + 6.7vw);
@@ -549,11 +559,6 @@ section {
 .about .about-container .box .box-name .lang-1 .bar-4::after {
   width: 28%;
 }
-/* .about .about-container .box .box-name .lang-1 .bar-8::after,
-.about .about-container .box .box-name .lang-1 .bar-7::after,
-.about .about-container .box .box-name .lang-1 .bar-6::after {
-  width: 100%;
-} */
 .about .exp-container {
   margin-top: 5rem;
   display: flex;

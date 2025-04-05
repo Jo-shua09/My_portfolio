@@ -102,31 +102,9 @@ function portfolioItemDetails(portfolioItem) {
   popupSub.innerHTML = portfolioItem.querySelector(".project_name").innerHTML;
 
   // Update the content
-  popupContent.innerHTML = portfolioItem.querySelector(".project_details").innerHTML;
+  popupContent.innerHTML =
+    portfolioItem.querySelector(".project_details").innerHTML;
 }
-// document.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("view_popup")) {
-//     togglePortfolioPopup();
-//     portfolioItemDetails(e.target.parentElement);
-//   }
-// });
-// function togglePortfolioPopup() {
-//   document.querySelector(".popup_portfolio").classList.toggle("open");
-// }
-// document
-//   .querySelector(".close_popup")
-//   .addEventListener("click", togglePortfolioPopup);
-
-// function portfolioItemDetails(portfolioItem) {
-//   document.querySelector(".popup_img img").src =
-//     portfolioItem.querySelector(".project_img").src;
-
-//   document.querySelector(".popup_sub span").innerHTML =
-//     portfolioItem.querySelector(".project_name").innerHTML;
-
-//   document.querySelector(".popup_content").innerHTML =
-//     portfolioItem.querySelector(".project_details").innerHTML;
-// }
 
 // ============== BACKGROUND AND COLOR CHANGER ===============
 const dayNight = document.querySelector(".background-change");
@@ -145,7 +123,7 @@ window.addEventListener("load", () => {
 
 // ============= AUTO TYPING SETTINGS ===============
 var typed = new Typed(".typing", {
-  strings: ["Web Designer", "Frontend Developer", "Gamer"],
+  strings: ["Web Developer", "Frontend Developer", "Tech Enthusiast"],
   typeSpeed: 100,
   BackSpeed: 60,
   loop: true,
@@ -178,69 +156,3 @@ navLinks.forEach((link) => {
     }
   });
 });
-// const nav = document.querySelector(".nav");
-// const navList = nav.querySelectorAll("li");
-// const totalNavList = navList.length;
-// allSection = document.querySelectorAll(".section");
-// totalSection = allSection.length;
-
-// for (let i = 0; i < totalNavList; i++) {
-//   const a = navList[i].querySelector("a");
-//   a.addEventListener("click", (event) => {
-//     // event.preventDefault();
-//     navList.forEach((listItem) =>
-//       listItem.querySelector("a").classList.remove("active")
-//     );
-//     event.target.classList.add("active");
-//     showSection(this);
-//   });
-// }
-// const nav = document.querySelector(".nav"),
-//   navList = nav.querySelectorAll("li"),
-//   totalNavList = navList.length,
-//   allSection = document.querySelectorAll(".section"),
-//   totalSection = allSection.length;
-
-// for (let i = 0; i < totalNavList; i++) {
-//   const a = navList[i].querySelector("a");
-//   a.addEventListener("click", function () {
-//     for (let i = 0; i < totalSection; i++) {
-//       allSection[i].classList.remove("back-section");
-//     }
-//     for (let j = 0; j < totalNavList; j++) {
-//       if (navList[j].querySelector("a").classList.contains("active")) {
-//         allSection[j].classList.add("back-section");
-//       }
-//       navList[j].querySelector("a").classList.remove("active");
-//     }
-//     this.classList.add(active);
-//   });
-// }
-
-// function showSection(element) {
-//   for (let i = 0; i < totalSection; i++) {
-//     allSection[i].classList.remove("active");
-//   }
-//   const target = element.getAttribute("href").split("#")[1];
-//   document.querySelector("#", target).classList.add("active");
-// }
-
-// let submitBtn = document.querySelector(".submit");
-// let Name = document.myForm.name;
-// let Enail = document.myForm.email;
-// let Subject = document.myForm.subject;
-// let Message = document.myForm.message;
-// let Form = document.querySelector("#myform");
-// let Form = document.myForm;
-// submitBtn.onclick = function () {
-//   if (Name != "" && Email != "" && Subject != "" && Message != "") {
-//     Form.reset();
-//   }
-// };
-
-// Form.addEventListener("submit", function () {
-//   Form.preventDefault();
-//   setInterval(() => {
-//     Form.reset();
-//   }, 3000);
-// });
